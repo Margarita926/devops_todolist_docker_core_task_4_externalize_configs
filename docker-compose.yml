@@ -32,6 +32,13 @@ services:
       - MYSQL_DATABASE=app_db
       - MYSQL_USER=app_user
       - MYSQL_PASSWORD=1234
+      - ENGINE=django.db.backends.mysql
+      - NAME=app_db
+      - USER=app_user
+      - PASSWORD=1234
+      - HOST=db
+      - PORT=3306
+
     networks:
       - todoapp-net
 volumes:
